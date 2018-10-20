@@ -12,7 +12,7 @@ var flash = require("connect-flash");
 var mongoose = require("mongoose");
 var cookieParser = require("cookie-parser");
 
-
+//for session management
 // For session Management
 var session = require("express-session");
 var MongoStore = require("connect-mongo")(session);
