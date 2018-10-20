@@ -54,12 +54,7 @@ app.use(bodyParser.json());
 
 // Routing
 app.get("/", (req, res) => {
-  if(req.session.pageViews){
-    req.session.pageViews++;
-  } else {
-    req.session.pageViews = 1;
-  }
-  res.render("home", {count : req.session.pageViews});
+  res.render("home", {count : ""});
 })
 
 app.use("/users", userRouter);

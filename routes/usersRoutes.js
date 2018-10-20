@@ -23,8 +23,7 @@ router.get("/login", (req,res) => {
 router.post("/signup",(req, res) => {
 
   var newUser = new User({
-    fname : req.body.fname,
-    lname : req.body.lname,
+    name : req.body.name,
     contact : req.body.contact,
     email : req.body.email,
     pass : req.body.pass
@@ -56,8 +55,7 @@ module.exports = router;
 
 
 function errorObj(){
-    this.fname = "";
-    this.lname = "";
+    this.name ="";
     this.pass = "";
     this.contact = "";
     this.email = "";

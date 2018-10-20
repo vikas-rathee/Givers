@@ -1,4 +1,4 @@
-/*
+
 html{
   --color-primary: #a2792f;
   --color-primary-dark: #5c3c10;
@@ -21,7 +21,7 @@ body{
   background-color: rgba(255,255,255, 50%);
   margin: 0 auto;
   margin-top: 3rem;
-  border-radius: 2px;
+  border-radius: 5px;
   margin-bottom: 3rem;
 }
 
@@ -92,23 +92,6 @@ body{
   margin-bottom: 2rem;
 }
 
-.icon-group{
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  justify-content: space-between;
-  margin-bottom: 3rem;
-}
-
-.icon{
-  height: 4rem;
-  width: 4rem;
-}
-
-.icon:hover{
-  cursor: pointer;
-}
-
 .error-msg{
   font-size: .7rem;
   margin: 0;
@@ -118,4 +101,4 @@ body{
   flex: 0 0 100%;
   color: #e52b2b;
   text-transform: uppercase;
-} */
+}

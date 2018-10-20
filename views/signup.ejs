@@ -9,16 +9,10 @@
     <div class="container">
       <h2 class="heading">Sign-up</h2>
       <form class="form" method="post">
-        <label for="fname" class="label">First Name: </label>
+        <label for="fname" class="label">Name: </label>
         <div class="input-box">
-          <input type="text" name="fname" id="fname" class="input" autocomplete="off" placeholder="Elon">
-          <h6 class="error-msg"><%= err.fname %></h6>
-        </div>
-
-        <label for="lname" class="label">Last Name: </label>
-        <div class="input-box">
-          <input type="text" name="lname" id="lname" class="input" autocomplete="off" placeholder="Musk">
-          <h6 class="error-msg"><%= err.lname %></h6>
+          <input type="text" name="fname" id="fname" class="input" autocomplete="off" placeholder="Elon Musk">
+          <h6 class="error-msg"><%= err.name %></h6>
         </div>
 
         <label for="contact" class="label">Contact Number: </label>
