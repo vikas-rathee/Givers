@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup</title>
+    <%- include ./partials/header %>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="heading">Sign-up</h2>
+      <form class="form" method="post">
+        <label for="fname" class="label">First Name: </label>
+        <div class="input-box">
+          <input type="text" name="fname" id="fname" class="input" autocomplete="off" placeholder="Elon">
+          <h6 class="error-msg"><%= err.fname %></h6>
+        </div>
+
+        <label for="lname" class="label">Last Name: </label>
+        <div class="input-box">
+          <input type="text" name="lname" id="lname" class="input" autocomplete="off" placeholder="Musk">
+          <h6 class="error-msg"><%= err.lname %></h6>
+        </div>
+
+        <label for="contact" class="label">Contact Number: </label>
+        <div class="input-box">
+          <input type="text" name="contact" id="contact" class="input" autocomplete="off" placeholder="Enter without city and country codes">
+          <h6 class="error-msg"><%= err.contact %></h6>
+        </div>
+
+        <label for="email" class="label">Email: </label>
+        <div class="input-box">
+          <input type="email" name="email" id="email" class="input" autocomplete="off" placeholder="elonmusk@tesla.com">
+          <h6 class="error-msg"><%= err.email %></h6>
+        </div>
+
+
+        <label for="pass" class="label">Password: </label>
+        <div class="input-box">
+          <input type="password" name="pass" id="pass" class="input" autocomplete="off" placeholder="*******">
+          <h6 class="error-msg"><%= err.pass %></h6>
+        </div>
+
+        <button class="submit" type="submit" >Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
